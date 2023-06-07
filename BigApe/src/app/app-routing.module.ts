@@ -4,12 +4,19 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { HomeComponent } from './pages/home/home.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { EnquiriesComponent } from './admin/enquiries/enquiries.component';
 
 const routes: Routes = [
-{path:'landing', component:LandingComponent},
-{path: 'login', component:LoginComponent},
-{path: 'register', component:RegisterComponent},
-{path: 'home', component:HomeComponent}
+  {path: '', component:LandingComponent, pathMatch:'full'},
+  {path:'landing', component:LandingComponent},
+  {path: 'login', component:LoginComponent},
+  {path: 'register', component:RegisterComponent},
+  {path: 'home', component:HomeComponent},
+  {path: 'dashboard', component:DashboardComponent},
+  {path: 'enquiries', component:EnquiriesComponent},
+  {path: '**', component:LandingComponent, pathMatch:'full'}
+
 ];
 
 @NgModule({

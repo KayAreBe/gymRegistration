@@ -9,6 +9,18 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LandingComponent } from './pages/landing/landing.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { NgToastModule } from 'ng-angular-popup';
+import { NgConfirmModule } from 'ng-confirm-box';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { EnquiriesComponent } from './admin/enquiries/enquiries.component';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +30,22 @@ import { LandingComponent } from './pages/landing/landing.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    LandingComponent
+    LandingComponent,
+    DashboardComponent,
+    EnquiriesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+
+    NgToastModule,
+    NgConfirmModule
   ],
   providers: [],
   bootstrap: [AppComponent]
