@@ -29,7 +29,7 @@
                           <li class="scroll-to-section"><a href="#our-classes">Classes</a></li>
                           <li class="scroll-to-section"><a href="#schedule">Schedules</a></li>
                           <li class="scroll-to-section"><a href="#contact-us">Contact</a></li> 
-                          <li class="main-button"><a href="#">Sign Up</a></li>
+                          <li class="main-button"><a routerLink="/register">Sign Up</a></li>
                       </ul>        
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -63,7 +63,7 @@
   <section class="section" id="features">
       <div class="container">
           <div class="row">
-              <div class="col-lg-6 offset-lg-3" style="margin-left: 24rem;">
+              <div class="col-lg-6 offset-lg-3" style="margin-left: 24rem; margin-top: -3rem;">
                   <div class="section-heading">
                       <h2>Choose <em>Program</em></h2>
                       <img src="assets/images/line-dec.png" alt="waves">
@@ -167,11 +167,10 @@
   <section class="section" id="our-classes">
       <div class="container">
           <div class="row">
-              <div class="col-lg-6 offset-lg-3">
-                  <div class="section-heading">
-                      <h2>Our <em>Classes</em></h2>
-                      <img src="assets/images/line-dec.png" alt="">
-                      <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+              <div class="col-lg-6 offset-lg-3" id="cont">
+                  <div class="section-heading" style="margin-left: 40rem; margin-top: 3rem;">
+                      <h2><em>Classes</em></h2>
+                      <img src="assets/images/line-dec.png" style="margin-left: 2.5rem;">
                   </div>
               </div>
           </div>
@@ -230,10 +229,9 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-6 offset-lg-3">
-                  <div class="section-heading dark-bg">
-                      <h2>Classes <em>Schedule</em></h2>
-                      <img src="assets/images/line-dec.png" alt="">
-                      <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                  <div class="section-heading dark-bg" style="margin-left: 40rem; margin-top: 3rem;">
+                      <h2><em>Schedule</em></h2>
+                      <img src="assets/images/line-dec.png" style="margin-left: 3rem;">
                   </div>
               </div>
           </div>
@@ -296,10 +294,9 @@
       <div class="container">
           <div class="row">
               <div class="col-lg-6 offset-lg-3">
-                  <div class="section-heading">
-                      <h2>Expert <em>Trainers</em></h2>
-                      <img src="assets/images/line-dec.png" alt="">
-                      <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+                  <div class="section-heading" style="margin-left: 40rem; margin-top: 3rem;">
+                      <h2><em>Trainers</em></h2>
+                      <img src="assets/images/line-dec.png" style="margin-left: 2.5rem;">
                   </div>
               </div>
           </div>
@@ -369,8 +366,10 @@
           <div class="row">
               <div class="col-lg-6 col-md-6 col-xs-12">
                   <div id="map">
-                    <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                  </div>
+                    
+                    <!-- <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3580.3263133555006!2d28.0160052!3d-26.1860613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950ea23ac400b3%3A0xd9aa7546e337778f!2sThe%20Digital%20Academy!5e0!3m2!1sen!2sza!4v1686744860912!5m2!1sen!2sza" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
               </div>
               <div class="col-lg-6 col-md-6 col-xs-12">
                   <div class="contact-form">

@@ -735,7 +735,9 @@ subscribe
   color: #fff;
   margin: 15px 0px 25px 0px;
 }
-
+.cta-content{
+    margin-left: 19rem;
+}
 
 
 /*
@@ -749,7 +751,8 @@ Our Classes
 }
 
 #tabs ul {
-  margin: 0;
+  margin-left: 2rem;
+  margin-right: 4rem;
   padding: 0;
 }
 #tabs ul li {
@@ -850,6 +853,7 @@ schedule
   width: 100%;
   text-align: center;
   border: 1px solid #fff;
+  margin-left: 11rem;
 }
 
 #schedule table tbody {
@@ -947,6 +951,7 @@ trainers
   border-radius: 5px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   padding: 40px;
+  margin-left: 66px;
 }
 
 #trainers .trainer-item img {
