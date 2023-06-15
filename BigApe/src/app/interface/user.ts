@@ -5,7 +5,7 @@ export class User {
     mobile!: number;
     weight!: number;
     height!: number;
-    bmi!: number;
+    bmi!: Float32Array;
     bmiResult!: string;
     gender!: string;
     requireTrainer!: string;

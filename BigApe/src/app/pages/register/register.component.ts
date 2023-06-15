@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgToastService } from 'ng-angular-popup';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-register',
@@ -24,7 +25,7 @@ export class RegisterComponent implements OnInit{
 
   registrationForm!: FormGroup;
 
-  constructor(private fb: FormBuilder){}
+  constructor(private fb: FormBuilder, private api: UserService, private toastService: NgToastService, private activatedRoute: ActivatedRoute, private router: Router){}
 
 
   ngOnInit(): void {
@@ -50,7 +51,13 @@ export class RegisterComponent implements OnInit{
   }
 
   submit() {
-    console.log(this.registrationForm.value);
+    this.api.createUser(this.registrationForm.value)
+      .subscribe(res => {
+        this.toastService.success({ detail: 'SUCCESS', summary: 'Registration Successful', duration: 3000 });
+        this.registrationForm.reset();
+        console.log(res);
+        
+      });
     
   }
 
