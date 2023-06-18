@@ -311,8 +311,8 @@ header
 .header-area .main-nav .nav li:last-child a {
   display: inline-block;
   font-size: 13px;
-  padding: 11px 17px;
-  background-color: #ed563b;
+  padding: 11px 1px;
+  // background-color: #ed563b;
   color: #fff;
   text-align: center;
   font-weight: 400;
@@ -324,7 +324,7 @@ header
 }
 
 .header-area .main-nav .nav li:last-child a:hover {
-  background-color: #f9735b;
+  // background-color: #f9735b;
   opacity: 1;
 }
 

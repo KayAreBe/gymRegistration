@@ -20,7 +20,7 @@
               <div class="col-12">
                   <nav class="main-nav">
                       <!-- ***** Logo Start ***** -->
-                      <a href="index.html" class="logo">Jassa<em> Training</em></a>
+                      <a href="index.html" class="logo" style="padding-left: 2rem;">Big<em>Ape</em></a>
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
@@ -29,8 +29,17 @@
                           <li class="scroll-to-section"><a href="#our-classes">Classes</a></li>
                           <li class="scroll-to-section"><a href="#schedule">Schedules</a></li>
                           <li class="scroll-to-section"><a href="#contact-us">Contact</a></li> 
-                          <li class="main-button"><a routerLink="/register">Sign Up</a></li>
-                      </ul>        
+
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Sign Up
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="main-button" routerLink="/register">New Member</a></li>
+                              <li><a class="main-button" routerLink="/login">Admin</a></li>
+                            </ul>
+                          </div>
+                      </ul>
                       <a class='menu-trigger'>
                           <span>Menu</span>
                       </a>
