@@ -30,20 +30,20 @@ export class RegisterComponent implements OnInit{
 
   ngOnInit(): void {
     this.registrationForm = this.fb.group({
-      firstName: [''],
-      lastName: [''],
+      first_name: [''],
+      last_name: [''],
       email: [''],
       mobile: [''],
       weight: [''],
       height: [''],
       bmi: [''],
-      bmiResult: [''],
+      bmi_result: [''],
       gender: [''],
-      requireTrainer: [''],
+      require_trainer: [''],
       package: [''],
       important: [''],
-      haveGymBefore: [''],
-      enquiryDate: ['']
+      have_gym_before: [''],
+      enquiry_date: ['']
     });
     this.registrationForm.controls['height'].valueChanges.subscribe(res => {
       this.calculateBmi(res);
@@ -68,17 +68,17 @@ export class RegisterComponent implements OnInit{
     this.registrationForm.controls['bmi'].patchValue(bmi);
     switch (true) {
       case bmi < 18.5:
-        this.registrationForm.controls['bmiResult'].patchValue("Underweight");
+        this.registrationForm.controls['bmi_result'].patchValue("Underweight");
         break;
       case (bmi >= 18.5 && bmi < 25):
-        this.registrationForm.controls['bmiResult'].patchValue("Normal");
+        this.registrationForm.controls['bmi_result'].patchValue("Normal");
         break;
       case (bmi >= 25 && bmi < 30):
-        this.registrationForm.controls['bmiResult'].patchValue("Overweight");
+        this.registrationForm.controls['bmi_result'].patchValue("Overweight");
         break;
 
       default:
-        this.registrationForm.controls['bmiResult'].patchValue("Obese");
+        this.registrationForm.controls['bmi_result'].patchValue("Obese");
         break;
     }
   }

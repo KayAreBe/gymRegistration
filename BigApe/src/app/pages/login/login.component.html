@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="home vh-100">
+    <section id="section">
+        <div class="login-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <form class="form-signin" autocomplete="off">
+                        <div class="mb-3">
+                            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center;">Admin Login</h1>
+
+                            <label for="exampleInputEmail1" class="form-label">Username</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email"
+                                aria-describedby="emailHelp" required autofocus ngModel>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password"
+                                required ngModel>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn btn-primary">Login</button>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,17 +1,17 @@
 export class User {
-    firstName!: string;
-    lastName!: string;
+    first_name!: string;
+    last_name!: string;
     email!: string;
     mobile!: number;
     weight!: number;
     height!: number;
     bmi!: Float32Array;
-    bmiResult!: string;
+    bmi_result!: string;
     gender!: string;
-    requireTrainer!: string;
+    require_trainer!: string;
     package!: string;
     important!: string[];
-    haveGymBefore!: string;
-    enquiryDate!: string;
+    have_gym_before!: string;
+    enquiry_date!: string;
     id!: number;
   }

@@ -31,14 +31,14 @@
         <div class="col-md-6">
           <mat-form-field appearance="outline">
             <mat-label>First Name</mat-label>
-            <input formControlName="firstName" matInput placeholder="firstName">
+            <input formControlName="first_name" matInput placeholder="firstName">
             <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
           </mat-form-field>
         </div>
         <div class="col-md-6">
           <mat-form-field appearance="outline">
             <mat-label>LastName</mat-label>
-            <input formControlName="lastName" matInput placeholder="lastName">
+            <input formControlName="last_name" matInput placeholder="lastName">
             <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
           </mat-form-field>
         </div>
@@ -81,7 +81,7 @@
         <div class="col-md-6">
           <mat-form-field appearance="outline">
             <mat-label>BMI Result</mat-label>
-            <input readonly formControlName="bmiResult" matInput placeholder="BMI Result">
+            <input readonly formControlName="bmi_result" matInput placeholder="BMI Result">
             <mat-icon matSuffix><i class="fa fa-check" aria-hidden="true"></i></mat-icon>
           </mat-form-field>
         </div>
@@ -97,7 +97,7 @@
         </div>
         <div class="col-md-6">
           <label id="example-radio-group-label">Do you require Trainer?</label>
-          <mat-radio-group formControlName="requireTrainer" aria-labelledby="example-radio-group-label"
+          <mat-radio-group formControlName="require_trainer" aria-labelledby="example-radio-group-label"
             class="example-radio-group">
             <mat-radio-button class="example-radio-button" *ngFor="let trainerOpt of ['Yes', 'No']" [value]="trainerOpt">
               {{trainerOpt}}
@@ -130,7 +130,7 @@
         <div class="col-md-6">
           <mat-form-field appearance="outline">
             <mat-label>Have been Gym Before?</mat-label>
-            <mat-select formControlName="haveGymBefore">
+            <mat-select formControlName="have_gym_before">
               <mat-option *ngFor="let beenGym of ['Yes', 'No']" [value]="beenGym">
                 {{beenGym}}
               </mat-option>
@@ -141,7 +141,7 @@
         <div class="col-md-6">
           <mat-form-field appearance="outline">
             <mat-label>Enquiry Date</mat-label>
-            <input formControlName="enquiryDate" matInput [matDatepicker]="picker">
+            <input formControlName="enquiry_date" matInput [matDatepicker]="picker">
             <mat-hint>MM/DD/YYYY</mat-hint>
             <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
