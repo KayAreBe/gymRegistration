@@ -33,6 +33,7 @@ import { NgConfirmModule } from 'ng-confirm-box';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { EnquiriesComponent } from './admin/enquiries/enquiries.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UserDetailComponent } from './pages/user-detail/user-detail.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     LandingComponent,
     DashboardComponent,
-    EnquiriesComponent
+    EnquiriesComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
